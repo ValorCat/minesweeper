@@ -1,0 +1,44 @@
+.root {
+    -hidden-color-a: #a8d949;
+    -hidden-color-b: #8ecc39;
+    -revealed-color-a: #e4c29f;
+    -revealed-color-b: #d7b899;
+}
+
+.tile.color-a {
+    -fx-fill: -hidden-color-a;
+}
+
+.tile.color-b {
+    -fx-fill: -hidden-color-b;
+}
+
+.tile.color-a.revealed {
+    -fx-fill: -revealed-color-a;
+}
+
+.tile.color-b.revealed {
+    -fx-fill: -revealed-color-b;
+}
+
+.tile.color-a:hover {
+    -fx-fill: derive(-hidden-color-a, 25%);
+}
+
+.tile.color-b:hover {
+    -fx-fill: derive(-hidden-color-b, 15%);
+}
+
+.num {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.num.n1 { -fx-fill: blue; }
+.num.n2 { -fx-fill: green; }
+.num.n3 { -fx-fill: red; }
+.num.n4 { -fx-fill: purple; }
+.num.n5 { -fx-fill: maroon; }
+.num.n6 { -fx-fill: turquoise; }
+.num.n7 { -fx-fill: black; }
+.num.n8 { -fx-fill: gray; }
